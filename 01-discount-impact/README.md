@@ -10,7 +10,7 @@
 
 ## Data
 
-- **Dataset:** Sample Superstore (Kaggle). There are 9,994 order lines from 2014–2017, with sales, quantity, discount, profit, product (category / sub-category), region, segment, ship mode and order/ship dates.
+- **Dataset:** Sample Superstore, from Kaggle: [Superstore Dataset](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final). There are 9,994 order lines from 2014–2017, with sales, quantity, discount, profit, product (category / sub-category), region, segment, ship mode and order/ship dates.
 - **Where it goes:** `01-discount-impact/data/Sample - Superstore.csv`. The `data/` folder is git-ignored, so download the CSV from Kaggle and place it there before running the notebook.
 
 ### Cleaning notes
