@@ -83,22 +83,23 @@ The notebook ([`notebook.ipynb`](notebook.ipynb)) has five blocks.
 | Model / feature set | ROC AUC |
 |---|---:|
 | Logistic regression, all features | 0.986 |
-| Random forest, all features | 0.989 |
-| Random forest, all features **except** discount | 0.885 |
+| Random forest, all features | 0.988 |
+| Random forest, all features **except** discount | 0.884 |
 | Random forest, **discount only** | 0.945 |
 
-- The random forest catches **95%** of loss-making lines (444 of 468), with 76% precision.
-- **Permutation importance:** shuffling discount drops AUC by 0.296. Sub-category is next at 0.043, and every other feature is below 0.01.
-- **What-if:** with every test order set to the same discount, the average predicted loss risk is 6.1% at 0%, 27.7% at 25% and **66.2% at 30%**. The biggest jump sits right at the ~25% break-even found independently from the raw data.
+- The random forest catches **91%** of loss-making lines (428 of 468), with 80% precision.
+- **Permutation importance:** shuffling discount drops AUC by 0.299. Sub-category is next at 0.041, and every other feature is below 0.01.
+- **What-if:** with every test order set to the same discount, the average predicted loss risk is 5.2% at 0%, 25.2% at 25% and **63.6% at 30%**. The biggest jump sits right at the ~25% break-even found independently from the raw data.
 
 ### Charts
 
 | | |
 |---|---|
-| ![Margin heatmap](charts/02_margin_heatmap.png) | ![Break-even discount](charts/03_break_even_discount.png) |
-| ![Customer discount tiers](charts/04_customer_discount_tiers.png) | ![Feature importance](charts/05_feature_importance.png) |
+| ![Margin heatmap](charts/02_margin_heatmap.png) | ![Margin headroom by sub-category](charts/07_margin_headroom_by_subcategory.png) |
+| ![Customer discount tiers](charts/04_customer_discount_tiers.png) | ![Break-even discount](charts/03_break_even_discount.png) |
+| ![What-if discount curve](charts/06_what_if_discount.png) | ![Feature importance](charts/05_feature_importance.png) |
 
-![What-if discount curve](charts/06_what_if_discount.png)
+![Discount cap simulation](charts/08_discount_cap_simulation.png)
 
 ---
 
